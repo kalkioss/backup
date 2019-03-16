@@ -11,7 +11,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.enable_hwc_vds=0 \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=0 \
     debug.sdm.support_writeback=0 \
-    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
+    debug.cpurend.vsync=false
 
 # FUSE passthrough
 PRODUCT_PRODUCT_PROPERTIES += \
