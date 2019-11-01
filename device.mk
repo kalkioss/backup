@@ -190,7 +190,8 @@ PRODUCT_PACKAGES += \
     NotchBarKiller \
     SettingsOverlayJuice \
     SystemUIOverlayJuice \
-    TelephonyOverlayJuice
+    TelephonyOverlayJuice \
+    WifiOverlay
 
 -include $(LOCAL_PATH)/product_prop.mk
 -include $(LOCAL_PATH)/system_prop.mk
