@@ -191,7 +191,8 @@ PRODUCT_PACKAGES += \
     SettingsOverlayJuice \
     SystemUIOverlayJuice \
     TelephonyOverlayJuice \
-    WifiOverlay
+    WifiOverlay \
+    TetheringConfigOverlay
 
 -include $(LOCAL_PATH)/product_prop.mk
 -include $(LOCAL_PATH)/system_prop.mk
