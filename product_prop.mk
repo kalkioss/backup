@@ -6,6 +6,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     drm.service.enabled=true
 
+# Graphics
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.sf.enable_hwc_vds=0 \
+    ro.surface_flinger.force_hwc_copy_for_virtual_displays=0
+
 # IORap
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.iorapd.enable=true \
