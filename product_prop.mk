@@ -13,6 +13,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sdm.support_writeback=0 \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
+# FUSE passthrough
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.fuse.passthrough.enable=true
+
 # IORap
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.iorapd.enable=true \
