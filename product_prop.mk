@@ -28,6 +28,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.latch_unsignaled=1 \
     persist.sys.force_sw_gles=0 \
     vendor.display.disable_offline_rotator=1 \
+    ro.surface_flinger.protected_contents=false \
     ro.surface_flinger.running_without_sync_framework=true
 
 # FUSE passthrough
