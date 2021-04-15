@@ -129,3 +129,5 @@ PRODUCT_BOOT_JARS += \
 # Vendor Overlay
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor-overlay/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION))
+
+-include $(LOCAL_PATH)/product_prop.mk
