@@ -45,3 +45,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # System
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.binary_xml=false
+
+# Zygote
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.device_config.runtime_native.usap_pool_enabled=true
