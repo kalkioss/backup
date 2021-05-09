@@ -45,3 +45,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # System
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.binary_xml=false
+
+# ZRAM
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.zram.mark_idle_delay_mins=60 \
+    ro.zram.first_wb_delay_mins=180 \
+    ro.zram.periodic_wb_delay_hours=24
