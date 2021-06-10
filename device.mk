@@ -124,6 +124,14 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.2 \
     android.hardware.neuralnetworks@1.2.vendor
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2-service \
+    com.android.nfc_extras \
+    NfcNci \
+    SecureElement \
+    Tag
+
 # Power
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.0 \
