@@ -18,6 +18,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.radio.voice_on_lte=1 \
     persist.vendor.radio.calls.on.ims=1
 
+# Netflix custom property
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.netflix.bsp_rev=Q6115-31409-1
+
 # Scroll optimization
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.perf.scroll_opt=true
