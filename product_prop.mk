@@ -15,7 +15,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     vendor.display.disable_rotator_downscale=1 \
     debug.hwui.use_buffer_age=false \
     debug.sf.latch_unsignaled=1 \
-    persist.sys.force_sw_gles=0
+    persist.sys.force_sw_gles=0 \
+    vendor.display.disable_offline_rotator=1
 
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
