@@ -14,7 +14,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     renderthread.skia.reduceopstasksplitting=true \
     vendor.display.disable_rotator_downscale=1 \
     debug.hwui.use_buffer_age=false \
-    debug.sf.latch_unsignaled=1
+    debug.sf.latch_unsignaled=1 \
+    vendor.display.disable_offline_rotator=1
 
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
