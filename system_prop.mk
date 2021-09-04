@@ -18,6 +18,15 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.radio.voice_on_lte=1 \
     persist.vendor.radio.calls.on.ims=1
 
+# Kill off IMS logspam with fire
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.vendor.ssr.restart_level=ALL_ENABLE \
+    persist.vendor.ssr.enable_ramdumps=1 \
+    persist.vendor.ims.disableADBLogs=1 \
+    persist.vendor.ims.disableDebugLogs=1 \
+    persist.vendor.ims.disableIMSLogs=1 \
+    persist.vendor.ims.disableQXDMLogs=1
+
 # Netflix custom property
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.netflix.bsp_rev=Q6115-31409-1
