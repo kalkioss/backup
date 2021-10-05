@@ -1067,4 +1067,7 @@
          sending a request to enable or disable the camera while the video session is also
          paused. -->
     <bool name="config_useVideoPauseWorkaround">true</bool>
+
+    <!-- Whether device supports double tap to wake -->
+    <bool name="config_supportDoubleTapWake">true</bool>
 </resources>

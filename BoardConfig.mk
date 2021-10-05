@@ -146,6 +146,10 @@ TARGET_COPY_OUT_PRODUCT := product
 
 BUILD_WITHOUT_VENDOR := true
 
+# Power
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
+
 # Platform
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
 
