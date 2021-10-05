@@ -1058,13 +1058,6 @@
     <!-- Screen off delay -->
     <integer name="config_screen_off_delay">0</integer>
 
-    <!-- List of comma separated package names for
-         which we the system will not show crash, ANR,
-         etc. dialogs. -->
-    <string name="config_appsNotReportingCrashes">com.google.android.tts</string>
-
-    <!-- When true, indicates that the vendor's IMS implementation requires a workaround when
-         sending a request to enable or disable the camera while the video session is also
-         paused. -->
-    <bool name="config_useVideoPauseWorkaround">true</bool>
+    <!-- Whether device supports double tap to wake -->
+    <bool name="config_supportDoubleTapWake">true</bool>
 </resources>
