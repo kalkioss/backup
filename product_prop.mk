@@ -14,7 +14,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # IORap
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.iorapd.enable=true \
     persist.device_config.runtime_native_boot.iorap_readahead_enable=true \
     persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
