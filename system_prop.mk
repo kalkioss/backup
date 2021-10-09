@@ -8,6 +8,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.bluetooth.library_name=libbluetooth_qti.so \
     vendor.bluetooth.soc=cherokee
 
+# Charger
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.charger.enable_suspend=true \
+    persist.vendor.quick.charge=1
+
 # IMS
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.dbg.volte_avail_ovr=1 \
