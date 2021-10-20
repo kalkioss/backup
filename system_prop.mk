@@ -39,3 +39,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Scroll optimization
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.perf.scroll_opt=true
+
+# System
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.binary_xml=false
