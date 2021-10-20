@@ -785,4 +785,7 @@
 
     <!-- Pocket Lock -->
     <bool name="config_pocketUseLightSensor">false</bool>
+
+    <!-- Indicates whether device has a power button fingerprint sensor. -->
+    <bool name="config_is_powerbutton_fps" translatable="false">true</bool>
 </resources>
