@@ -9,7 +9,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.enable_hwc_vds=0 \
-    ro.surface_flinger.force_hwc_copy_for_virtual_displays=0
+    ro.surface_flinger.force_hwc_copy_for_virtual_displays=0 \
+    debug.sdm.support_writeback=0
 
 # IORap
 PRODUCT_PROPERTY_OVERRIDES += \
