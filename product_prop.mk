@@ -12,7 +12,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=0 \
     debug.sdm.support_writeback=0 \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
-    debug.cpurend.vsync=false
+    debug.cpurend.vsync=false \
+    debug.hwui.renderer=skiagl \
+    debug.renderengine.backend=skiaglthreaded \
+    renderthread.skia.reduceopstasksplitting=true
 
 # FUSE passthrough
 PRODUCT_PRODUCT_PROPERTIES += \
