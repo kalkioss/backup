@@ -27,7 +27,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.media_vol_steps=25 \
-    vendor.audio.offload.buffer.size.kb=256
+    vendor.audio.offload.buffer.size.kb=256 \
+    vendor.audio_hal.period_size=240
 
 # RCS
 PRODUCT_PRODUCT_PROPERTIES += \
