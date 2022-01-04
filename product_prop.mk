@@ -6,6 +6,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     drm.service.enabled=true
 
+# Graphics
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.media_vol_steps=25 \
