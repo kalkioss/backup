@@ -120,10 +120,6 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.2 \
     android.hardware.neuralnetworks@1.2.vendor
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
 # Power
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.0 \
@@ -178,6 +174,15 @@ PRODUCT_BOOT_JARS += \
 # Vendor Overlay
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor-overlay/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION))
+
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlayJuice \
+    FrameworksResOverlayJuice \
+    NotchBarKiller \
+    SettingsOverlayJuice \
+    SystemUIOverlayJuice \
+    TelephonyOverlayJuice
 
 -include $(LOCAL_PATH)/product_prop.mk
 -include $(LOCAL_PATH)/system_prop.mk
