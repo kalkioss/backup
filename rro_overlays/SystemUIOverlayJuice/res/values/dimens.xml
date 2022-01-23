@@ -31,4 +31,8 @@
 
     <!-- Rounded corner content padding -->
     <dimen name="rounded_corner_content_padding">8dp</dimen>
+
+    <!-- Location on the screen of the center of the physical power button -->
+    <dimen name="physical_power_button_center_screen_location_y">987.5px</dimen>
+    <dimen name="physical_fingerprint_sensor_center_screen_location_y">987.5px</dimen>
 </resources>
