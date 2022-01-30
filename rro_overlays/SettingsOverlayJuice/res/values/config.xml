@@ -23,4 +23,7 @@
 
     <!-- About device screen, build maintainer -->
     <string name="build_maintainer_summary">Avinash Dwivedi (kalkioss)</string>
+
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage" translatable="false">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
 </resources>
