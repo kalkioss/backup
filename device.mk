@@ -138,6 +138,26 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# Override
+PRODUCT_PACKAGES += \
+    AospFrameworkResOverlay \
+    AospWifiResOverlay \
+    DevicesAndroidOverlay \
+    DevicesOverlay \
+    ElderlyNavigationBarOverlay \
+    FrameworksResTarget \
+    GestureLineOverlay \
+    MccMncOverlay \
+    MiuiBiometricResOverlay \
+    MiuiBluetoothOverlay \
+    MiuiFrameworkResOverlay \
+    MiuiOptimizationOverlay \
+    MiuiSettingsResOverlay \
+    MiuiSystemUIPluginResOverlay \
+    MiuiSystemUIResOverlay \
+    ProvisionResOverlay \
+    WifiResTarget
+
 # Parts
 PRODUCT_PACKAGES += \
     XiaomiParts
