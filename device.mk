@@ -146,6 +146,26 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/nfc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf
 
+# Override
+PRODUCT_PACKAGES += \
+    AospFrameworkResOverlay \
+    AospWifiResOverlay \
+    DevicesAndroidOverlay \
+    DevicesOverlay \
+    ElderlyNavigationBarOverlay \
+    FrameworksResTarget \
+    GestureLineOverlay \
+    MccMncOverlay \
+    MiuiBiometricResOverlay \
+    MiuiBluetoothOverlay \
+    MiuiFrameworkResOverlay \
+    MiuiOptimizationOverlay \
+    MiuiSettingsResOverlay \
+    MiuiSystemUIPluginResOverlay \
+    MiuiSystemUIResOverlay \
+    ProvisionResOverlay \
+    WifiResTarget
+
 # Parts
 PRODUCT_PACKAGES += \
     XiaomiParts
