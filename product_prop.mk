@@ -15,7 +15,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.cpurend.vsync=false \
     debug.hwui.renderer=skiagl \
     debug.renderengine.backend=skiaglthreaded \
-    renderthread.skia.reduceopstasksplitting=true
+    renderthread.skia.reduceopstasksplitting=true \
+    vendor.display.disable_rotator_downscale=1
 
 # FUSE passthrough
 PRODUCT_PRODUCT_PROPERTIES += \
