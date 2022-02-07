@@ -11,7 +11,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     debug.hwui.renderer=skiagl \
     debug.renderengine.backend=skiaglthreaded \
-    renderthread.skia.reduceopstasksplitting=true
+    renderthread.skia.reduceopstasksplitting=true \
+    vendor.display.disable_rotator_downscale=1
 
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
