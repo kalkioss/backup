@@ -77,38 +77,39 @@ static constexpr int kInputEventWakeupModeOn = 5;
 using ::aidl::android::hardware::power::Mode;
 
 bool isDeviceSpecificModeSupported(Mode type, bool* _aidl_return) {
-	switch (type) {
-		case Mode::DOUBLE_TAP_TO_WAKE:
-                case mode::LOW_POWER:
-			*_aidl_return = true;
-			return true;
-		default:
-			return false;
-	}
+    switch (type) {
+        case Mode::DOUBLE_TAP_TO_WAKE:
+                case Mode::LOW_POWER:
+            *_aidl_return = true;
+            return true;
+        default:
+            return false;
+    }
 }
 
 bool setDeviceSpecificMode(Mode type, bool enabled) {
-	switch (type) {
-		case Mode::DOUBLE_TAP_TO_WAKE: 
+    switch (type) {
+        case Mode::DOUBLE_TAP_TO_WAKE:
                 case Mode::LOW_POWER:
                     ::android::base::WriteStringToFile(enabled ? "Y" : "N", BATTERY_SAVER_NODE, true);
-			int fd = open_ts_input();
-			if (fd == -1) {
-				LOG(WARNING)
-					<< "DT2W won't work because no supported touchscreen input devices were found";
-				return false;
+            {
+                int fd = open_ts_input();
+                if (fd == -1) {
+                    LOG(WARNING)
+                        << "DT2W won't work because no supported touchscreen input devices were found";
+                    return false;
 			}
-			struct input_event ev;
-			ev.type = EV_SYN;
-			ev.code = SYN_CONFIG;
-			ev.value = enabled ? kInputEventWakeupModeOn : kInputEventWakeupModeOff;
-			write(fd, &ev, sizeof(ev));
-			close(fd);
-			return true;
-		}
-		default:
-			return false;
-	}
+                struct input_event ev;
+                ev.type = EV_SYN;
+                ev.code = SYN_CONFIG;
+                ev.value = enabled ? kInputEventWakeupModeOn : kInputEventWakeupModeOff;
+                write(fd, &ev, sizeof(ev));
+                close(fd);
+            }
+            return true;
+        default:
+            return false;
+    }
 }
 
 }  // namespace impl
