@@ -12,7 +12,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.hwui.renderer=skiagl \
     debug.renderengine.backend=skiaglthreaded \
     renderthread.skia.reduceopstasksplitting=true \
-    vendor.display.disable_rotator_downscale=1
+    vendor.display.disable_rotator_downscale=1 \
+    debug.hwui.use_buffer_age=false
 
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
