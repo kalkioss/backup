@@ -21,6 +21,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.media_vol_steps=25 \
     vendor.audio.offload.buffer.size.kb=256
 
+# Memory optimizations
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.vendor.qti.sys.fw.bservice_enable=true \
+    ro.vendor.qti.sys.fw.bservice_limit=5 \
+    ro.vendor.qti.sys.fw.bservice_age=5000 \
+    ro.vendor.qti.am.reschedule_service=true
+
 # RCS
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.rcs.supported=1
