@@ -38,6 +38,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     vendor.audio.offload.buffer.size.kb=256 \
     vendor.audio_hal.period_size=240
 
+# Memory optimizations
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.vendor.qti.sys.fw.bservice_enable=true
+
 # RCS
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.rcs.supported=1
