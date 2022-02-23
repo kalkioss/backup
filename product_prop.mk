@@ -26,6 +26,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     vendor.display.disable_rotator_downscale=1 \
     debug.hwui.use_buffer_age=false \
     debug.sf.latch_unsignaled=1 \
+    persist.sys.force_sw_gles=0 \
     ro.surface_flinger.running_without_sync_framework=true
 
 # FUSE passthrough
