@@ -64,3 +64,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.media.transcoding.codec_max_operating_rate_720P=240 \
     debug.media.transcoding.codec_max_operating_rate_1080P=120
+
+# Video Calling
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.vendor.radio.report_codec=1 \
+    persist.vendor.radio.vdp_on_ims_cap=1 \
+    persist.vendor.qti.telephony.vt_cam_interface=2
