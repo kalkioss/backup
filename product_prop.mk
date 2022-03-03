@@ -14,6 +14,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     dalvik.vm.dex2oat-minidebuginfo=false \
     dalvik.vm.minidebuginfo=false
 
+# Disable Rescue Party
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.disable_rescue=true \
+    persist.device_config.configuration.disable_rescue_party=true
+
 # DRM
 PRODUCT_PRODUCT_PROPERTIES += \
     drm.service.enabled=true
