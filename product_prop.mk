@@ -39,6 +39,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.media_vol_steps=25 \
     vendor.audio.offload.buffer.size.kb=256
 
+# IORap
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.iorapd.enable=true \
+    persist.device_config.runtime_native_boot.iorap_perfetto_enable=false \
+    persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
 # RCS
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.rcs.supported=1
