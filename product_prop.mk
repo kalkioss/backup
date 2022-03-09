@@ -52,6 +52,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.qti.sys.fw.bservice_age=5000 \
     ro.vendor.qti.am.reschedule_service=true
 
+# IORap
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.iorapd.enable=true \
+    persist.device_config.runtime_native_boot.iorap_perfetto_enable=true \
+    persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
 # RCS
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.rcs.supported=1
