@@ -1021,7 +1021,7 @@
     <bool name="config_is_powerbutton_fps" translatable="false">true</bool>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">90px</dimen>
+    <dimen name="status_bar_height">90px</dimen>
 
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveBatteryLed">false</bool>
